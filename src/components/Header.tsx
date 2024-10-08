@@ -10,7 +10,7 @@ export const Header: React.FC<HeaderProps> = ({titlePage}) => {
   return (
     <View style={styles.container}>
         <View />
-        <Text style={styles.title}> {titlePage} </Text>
+        <Text style={styles.title}>{titlePage}</Text>
       <DrawerToggleButton 
         tintColor='#9B6BB3'
       />
