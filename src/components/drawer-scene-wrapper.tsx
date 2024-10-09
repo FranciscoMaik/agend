@@ -22,7 +22,7 @@ export const DrawerSceneWrapper: React.FC<DrawerSceneWrapperProps> = ({ children
                 rotateY: interpolate(progress.value, [0, 1], [0, -25], Extrapolation.CLAMP) + 'deg'
             }
         ],
-        borderRadius: 20,
+        borderRadius: interpolate(progress.value, [0, 1], [0, 20], Extrapolation.CLAMP),
         overflow: 'hidden',
     }));
 
